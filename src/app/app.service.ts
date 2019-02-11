@@ -10,8 +10,10 @@ export class AppService {
   }
 
   getProtoTest(): Observable<any> {
+
     return this.http.get('http://localhost:5000/api/Protobufs/ProtobufList', { responseType: 'arraybuffer' })
       .pipe(map((response: ArrayBuffer) => {
+        console.log('test');
         const arr = new Uint8Array(response);
         console.log(arr);
         return response;

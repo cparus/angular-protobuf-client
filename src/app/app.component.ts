@@ -13,6 +13,6 @@ export class AppComponent implements OnInit {
 
 
   ngOnInit() {
-    this.appService.getProtoTest();
+    this.appService.getProtoTest().subscribe();
   }
 }
