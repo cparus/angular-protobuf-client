@@ -1,0 +1,16 @@
+// schemas.proto
+syntax = "proto3";
+
+message Jabroni {
+  int32 Id = 1;
+  string FirstName = 2;
+  string LastName = 3;
+  string Address = 4;
+  int32 TestNum = 5;
+}
+
+message JabroniList {
+  repeated Jabroni Jabronis = 1;
+}
+
+

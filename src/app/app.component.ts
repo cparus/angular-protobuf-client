@@ -7,10 +7,7 @@ import { AppService } from './app.service';
 })
 
 export class AppComponent implements OnInit {
-  title = 'app';
-
   constructor(private appService: AppService) { }
-
 
   ngOnInit() {
     this.appService.getProtoTest().subscribe();
