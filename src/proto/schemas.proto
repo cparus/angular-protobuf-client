@@ -1,7 +1,7 @@
 // schemas.proto
 syntax = "proto3";
 
-message Jabroni {
+message TestModel {
   int32 Id = 1;
   string FirstName = 2;
   string LastName = 3;
@@ -9,8 +9,8 @@ message Jabroni {
   int32 TestNum = 5;
 }
 
-message JabroniList {
-  repeated Jabroni Jabronis = 1;
+message TestModelList {
+  repeated TestModel TestModels = 1;
 }
 
 

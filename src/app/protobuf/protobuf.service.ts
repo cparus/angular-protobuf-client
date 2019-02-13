@@ -7,6 +7,6 @@ export class ProtobufService {
   readonly proto: any = proto;
 
   deserializeMessageBinary(data: Uint8Array) {
-    return proto.JabroniList.deserializeBinary(data).toObject();
+    return proto.TestModelList.deserializeBinary(data).toObject();
   }
 }
