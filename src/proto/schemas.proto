@@ -1,7 +1,7 @@
 // schemas.proto
 syntax = "proto3";
 
-message TestModel {
+message ProtoModel {
   int32 Id = 1;
   string FirstName = 2;
   string LastName = 3;
@@ -9,8 +9,8 @@ message TestModel {
   int32 TestNum = 5;
 }
 
-message TestModelList {
-  repeated TestModel TestModels = 1;
+message ProtoModelList {
+  repeated ProtoModel ProtoModels = 1;
 }
 
 
